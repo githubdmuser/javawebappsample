@@ -17,8 +17,8 @@ node {
   }
   
   stage('deploy') {
-    def resourceGroup = 'app_service_test' 
-    def webAppName = 'testglapp123'
+    def resourceGroup = 'helloworld-1563959593909-rg' 
+    def webAppName = 'helloworld-1563959593909'
     // login Azure
     withCredentials([azureServicePrincipal('customerzeroonboard')]) {
       sh '''
